@@ -20,6 +20,9 @@ namespace TestProject1
 		public Task InitializeAsync()
 		{
 			_testOutputHelper.WriteLine("InitializeAsync");
+
+			throw new Exception();
+
 			return Task.CompletedTask;
 		}
 
