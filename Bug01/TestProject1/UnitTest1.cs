@@ -18,6 +18,9 @@ namespace TestProject1
 		public ValueTask InitializeAsync()
 		{
 			_testOutputHelper.WriteLine("InitializeAsync");
+
+			throw new Exception();
+
 			return ValueTask.CompletedTask;
 		}
 
